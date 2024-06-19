@@ -35,4 +35,4 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy --all docker://python:3.12-alpine3.20 docker://docker.io/weixiaodyanlei/python:3.12-alpine3.20
-        skopeo copy --all docker://postgres:latest docker://docker.io/weixiaodyanlei/postgres:latest
+        skopeo copy --all docker://postgres:16.3-alpine docker://docker.io/weixiaodyanlei/postgres:16.3-alpine
