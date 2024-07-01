@@ -23,4 +23,4 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy --multi-arch all docker://docker.io/python:3.12-alpine3.20 docker://registry.cn-hangzhou.aliyuncs.com/dawncharles/python:3.12-alpine3.22
+         skopeo copy --override-arch=arm64 docker://docker.io/postgres:12.19-alpine3.20 docker://registry.cn-hangzhou.aliyuncs.com/dawncharles/postgres:12.19-alpine3.20
